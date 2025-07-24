@@ -1,0 +1,18 @@
+\usepackage{microtype}
+
+\title{The Title}
+\author{The Author}
+\date{\today{}}
+
+\setulmarginsandblock{1in}{0.75in}{*}
+\setlrmarginsandblock{0.75in}{0.5in}{*}
+\checkandfixthelayout{}
+
+\pagestyle{headings}
+\makeevenhead{headings}{\thepage}{\textsc{\theauthor}}{}
+\makeoddhead{headings}{}{\textsc{\thetitle}}{\thepage}
+
+\OnehalfSpacing{}
+
+\input{shared/hyphenations}
+\input{shared/custom-commands}

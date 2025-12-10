@@ -2,7 +2,16 @@
 \documentclass[statementpaper,11pt]{memoir}
 
 \usepackage{fontspec}
-\setmainfont{OpenDyslexic}
+\setmainfont{OpenDyslexic}[
+  Path = ./fonts/,
+  Extension = .otf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+  BoldItalicFont = *-Bold-Italic,
+  SmallCapsFont = *-Regular,
+  SmallCapsFeatures = {Letters=SmallCaps, Scale=0.75}
+]
 
 \input{shared/preamble}
 
